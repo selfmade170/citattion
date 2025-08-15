@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to allow content to expand */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ee); /* Soft, subtle gradient background */
+    color: #333d47; /* Deep charcoal text for readability */
+    transition: background-color 0.5s ease; /* Smooth transition for background changes */
+}
+
+.container {
+    text-align: center;
+    padding: 40px 30px; /* More generous padding */
+    border-radius: 20px; /* Softer, more rounded corners */
+    background: rgba(255, 255, 255, 0.95); /* Slightly less transparent white */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05); /* Multi-layer shadow for depth */
+    backdrop-filter: blur(5px); /* Subtle frosted glass effect */
+    max-width: 500px; /* Constrain width for better aesthetics */
+    width: 90%; /* Responsive width */
+    animation: fadeIn 1s ease-out; /* Simple fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 2.8rem; /* Larger, more impactful heading */
+    color: #4a69bd; /* Modern blue accent */
+    margin-bottom: 25px;
+    letter-spacing: -0.5px; /* Tighter letter spacing for modern feel */
+}
+
+p#quote {
+    font-size: 1.4rem; /* Larger quote text */
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #5a6a7c; /* Slightly lighter text for quotes */
+    font-style: italic;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 30px; /* Larger button */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(45deg, #4a69bd, #63b8ff); /* Vibrant button gradient */
+    border: none;
+    border-radius: 10px; /* Rounded button corners */
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Button shadow */
+    transition: all 0.3s ease; /* Smooth transitions for hover/active */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #63b8ff, #4a69bd); /* Invert gradient on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Press effect */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtler shadow on active */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    p#quote {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
